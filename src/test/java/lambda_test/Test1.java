@@ -55,7 +55,7 @@ public class Test1 {
                 allButtons.get(i).click();
             }
         }
-        List<WebElement> allMessages = driver.findElements(By.xpath("/ /p"));
+        List<WebElement> allMessages = driver.findElements(By.xpath("//p"));
         for (int i = 0; i < allMessages.size(); i++) {
             if (allMessages.get(i).getText().contains("Thanks")) {
                 System.out.println(allMessages.get(i).getText());
